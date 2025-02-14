@@ -1,0 +1,1 @@
+Simple Graphql Client With Avalonia

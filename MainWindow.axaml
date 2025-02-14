@@ -1,0 +1,26 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="multiverseFinder.MainWindow"
+        Title="Multiverse Finder"
+        Width="420"
+        Height="245"
+        Background="AliceBlue">
+        <StackPanel>
+            <Border Background="Gainsboro"
+                    BorderBrush="Black"
+                    Padding="10" Margin="0"
+                    HorizontalAlignment="Center"
+                    Width="420"
+                    >
+                <TextBlock HorizontalAlignment="Center" Foreground="Black">Rick and Morty Multiverse Finder</TextBlock>
+            </Border>
+            
+            <TextBox x:Name="characterName" Watermark="Character Name" Margin="5"/>
+            <Button Content="Get Character" Cursor="Hand" Margin="5"  Background="Gray" HorizontalAlignment="Center" Click="Button_Click"/>
+            <TextBlock x:Name="greetingOutput" />
+            <TextBox  x:Name="resultBox" Height="100" IsReadOnly="True"  TextWrapping="Wrap" Margin="5"/>
+        </StackPanel>
+</Window>
